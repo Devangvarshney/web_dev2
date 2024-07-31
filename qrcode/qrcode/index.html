@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR CODE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <div class="container">
+     <div class="box">
+       <section class ="upper">
+         <h1>Qr code Genrator</h1>
+         <p>paste text to genrate QR code</p>
+       </section>
+       <form id="qrForm">
+         <input type="text"
+         placeholder="Enter Text"
+         name="qrtext" 
+         id="qrInputText"
+        / >
+        <button id="qrbutton" type="sumbit" >Genrate Qr code</button>
+    </form>
+        <section id="qrContainer" class="qr_container">
+          <img  id="qrImage" src="./qrimage.webp " alt="QR CODE"/>
+        </section>
+    
+     </div>
+   </div>
+      <script src="script.js"></script>
+  </body>
+</html>
