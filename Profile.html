@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Profile</title>
+  </head>
+  <script>
+    if (!localStorage.getItem("Login")) {
+      alert("Please log in");
+      location.href = "./Login.html";
+    }
+  </script>
+  <header>
+    <div class="nav">
+      <span class="logo"><a href="./index.html">My Store</a></span>
+      <ul class="menu">
+        <li class="menuItem">
+          <i class="ri-home-line icon"></i>
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="menuItem">
+          <i class="ri-shopping-basket-line icon"></i>
+          <a href="./Shop.html">Shop</a>
+        </li>
+        <!-- <li class="menuItem">
+          <i class="ri-caravan-line icon"></i>
+          <a href="./Track.html">Track Order</a>
+        </li> -->
+
+        <a href="./Cart.html">
+          <i class="ri-shopping-bag-4-line cart"></i>
+          <span id="itemTotal" class="check">0</span>
+        </a>
+
+        <a href="./Login.html">
+          <i class="ri-user-3-line user"></i>
+        </a>
+        <div class="menumbl">
+          <i class="ri-menu-4-fill menuicon"></i>
+        </div>
+      </ul>
+    </div>
+    <div class="sidebar hidden">
+      <ul class="sidemenu">
+        <li class="sidemenuItem">
+          <i class="ri-home-line icon"></i> <a href="./index.html">Home</a>
+        </li>
+        <li class="sidemenuItem">
+          <i class="ri-shopping-basket-line icon"></i>
+          <a href="./Shop.html">Shop</a>
+        </li>
+
+        <!-- <li class="sidemenuItem">
+          <i class="ri-caravan-line icon"></i>
+          <a href="./Track.html">Track Order</a>
+        </li> -->
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="profile">
+      <button class="logout" id="logout">Logout</button>
+      <div class="wrapperProfile">
+        <span
+          ><img src="./assets/img/avatar.webp" class="profileImg" alt="Profile"
+        /></span>
+        <h1>Welcome back <strong id="fullname"></strong></h1>
+      </div>
+    </div>
+    <script src="./js/style.js"></script>
+  </body>
+  <footer>
+    <div class="footerContainer">
+      <div class="innerFooter">
+        <h1>Contact Us</h1>
+        <span>
+          <strong> Address : &nbsp;</strong>
+
+          <span>Johar Town Lahore Pakistan</span>
+        </span>
+        <span>
+          <strong> Phone : &nbsp;</strong>
+          <a class="nbr" href="tel:+923246983182">+923246983182</a>
+        </span>
+      </div>
+      <div class="innerFooter">
+        <h1>Social</h1>
+        <span class="socialIcon">
+          <i class="ri-facebook-circle-fill social"></i>
+          <i class="ri-instagram-fill social"></i>
+          <i class="ri-twitter-x-fill social"></i>
+          <i class="ri-tiktok-line social"></i>
+        </span>
+      </div>
+
+      <div class="innerFooter">
+        <h1>RightS</h1>
+        <span class="socialIcon">
+          <p>All rights are Reserved By My Store &copy; 2024</p>
+        </span>
+      </div>
+    </div>
+  </footer>
+</html>
