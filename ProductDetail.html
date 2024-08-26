@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <title>Product Detail</title>
+  </head>
+  <header>
+    <div class="nav">
+      <span class="logo"><a href="./index.html">My Store</a></span>
+      <ul class="menu">
+        <li class="menuItem">
+          <i class="ri-home-line icon"></i>
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="menuItem">
+          <i class="ri-shopping-basket-line icon"></i>
+          <a href="./Shop.html">Shop</a>
+        </li>
+        <li class="menuItem">
+          <i class="ri-caravan-line icon"></i>
+          <a href="./Track.html">Track Order</a>
+        </li>
+
+        <a href="./Cart.html">
+          <i class="ri-shopping-bag-4-line cart"></i>
+          <span id="itemTotal" class="check">0</span>
+        </a>
+
+        <a href="./Login.html">
+          <i class="ri-user-3-line user"></i>
+        </a>
+        <div class="menumbl">
+          <i class="ri-menu-4-fill menuicon"></i>
+        </div>
+      </ul>
+    </div>
+    <div class="sidebar hidden">
+      <ul class="sidemenu">
+        <li class="sidemenuItem">
+          <i class="ri-home-line icon"></i> <a href="./index.html">Home</a>
+        </li>
+        <li class="sidemenuItem">
+          <i class="ri-shopping-basket-line icon"></i>
+          <a href="./Shop.html">Shop</a>
+        </li>
+
+        <li class="sidemenuItem">
+          <i class="ri-caravan-line icon"></i>
+          <a href="./Track.html">Track Order</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <p class="heading">Product Detail</p>
+    <div class="DetailContainer">
+      <div class="PageDetail">
+        <img
+          class="productImg"
+          src="https://unitedstore.pk/wp-content/uploads/2022/08/Redmi-Buds-3-Lite-2.png"
+          alt="product" />
+      </div>
+      <div class="PageDesc">
+        <p class="productHeading"></p>
+        <p class="productDesc"></p>
+        <p class="productPrice">
+          Category : <strong class="productCat"></strong>
+        </p>
+        <p class="productPrice">Rs. <strong class="productMRP"></strong></p>
+        <button type="button" class="cartBtn">Add to Cart</button>
+      </div>
+    </div>
+    <script src="./js/productDetail.js"></script>
+
+    <script src="./js/style.js"></script>
+  </body>
+</html>
